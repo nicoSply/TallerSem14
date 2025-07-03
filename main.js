@@ -68,14 +68,14 @@ function validateEmail(femail) {
 let athletesList = []; // Cambiado de coachesList a athletesList para reflejar deportistas
 
 // Evento del formulario
-document.getElementById("athleteForm").addEventListener("submit", function (e) {
+document.getElementById("formularioDeportistas").addEventListener("submit", function (e) {
   e.preventDefault();
 
   // Obtener datos
-  const codigo = document.getElementById("athleteCode").value.trim();
-  const nombre = document.getElementById("athleteName").value.trim();
-  const deporte = document.getElementById("athleteSport").value; // Cambiado de coachSport a athleteSport
-  const horasStr = document.getElementById("athleteSportHours").value; // Cambiado de coachSportHours a athleteSportHours
+  const codigo = document.getElementById("codigoDeportista").value.trim();
+  const nombre = document.getElementById("nombreDeportista").value.trim();
+  const deporte = document.getElementById("deporte").value;
+  const horasStr = document.getElementById("horasDeporte").value;
   const horas = Number(horasStr);
 
   // Validación
@@ -108,7 +108,7 @@ document.getElementById("athleteForm").addEventListener("submit", function (e) {
 
 // Mostrar lista ordenada con barra
 function mostrarRanking() {
-  const lista = document.getElementById("athleteRanking");
+  const lista = document.getElementById("rankingDeportistas");
   lista.innerHTML = "";
 
   athletesList.forEach((athlete) => {
