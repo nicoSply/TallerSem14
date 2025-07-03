@@ -1,0 +1,146 @@
+/* SECCIÓN CONTÁCTANOS */
+.contacto {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #caeaf7;
+  color: #333;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.contacto-contenido {
+  display: flex; /* Muestra el formulario y el texto lado a lado */
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.formulario-contacto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-grupo label {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+input,
+select,
+textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 4rem;
+}
+
+.checkboxes,
+.radios {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.checkboxes label,
+.radios label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+button[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: blue;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: brown;
+}
+
+.contacto-instrucciones {
+  flex: 1;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #333;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.contacto-instrucciones p + p {
+  margin-top: 1rem;
+}
+
+.mensaje-enviado {
+  margin-top: 1.5rem;
+  color: green;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Luckiest Guy", cursive;
+}
+
+/* RESPONSIVE PARA MÓVILES */
+@media (max-width: 768px) {
+  .contacto-contenido {
+    flex-direction: column;
+  }
+
+  .formulario-contacto,
+  .contacto-instrucciones {
+    width: 100%;
+  }
+
+  .contacto-instrucciones {
+    text-align: center;
+  }
+
+  .mensaje-enviado {
+    text-align: center;
+  }
+
+  button[type="submit"] {
+    align-self: center;
+    width: 100%;
+    max-width: 15rem;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 1.1rem;
+  }
+}
