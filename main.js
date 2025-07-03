@@ -54,6 +54,9 @@ form.addEventListener("submit", (event) => {
     if (!confirmation) {
       event.preventDefault();
     }
+    else {
+      alert("Formulario enviado correctamente");
+    }
   }
 });
 
